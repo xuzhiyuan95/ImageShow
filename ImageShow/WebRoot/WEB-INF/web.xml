@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>ImageOutServlet</servlet-name>
+    <servlet-class>servlet.ImageOutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ImageUploadServlet</servlet-name>
+    <servlet-class>servlet.ImageUploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ImageSaveServlet</servlet-name>
+    <servlet-class>servlet.ImageSaveServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Get_imgById_Servlet</servlet-name>
+    <servlet-class>servlet.Get_imgById_Servlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>Get_imgById_Servlet</servlet-name>
+    <url-pattern>/Get_imgById_Servlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ImageOutServlet</servlet-name>
+    <url-pattern>/servlet/ImageOutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageUploadServlet</servlet-name>
+    <url-pattern>/ImageUploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageSaveServlet</servlet-name>
+    <url-pattern>/ImageSaveServlet</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
